@@ -38,7 +38,7 @@ function setStatus(studio, type, level, percentage, people=0, maxpeople=0) {
             $("#"+studio+"_percentage_"+type).removeClass("bg-info bg-warning bg-danger bg-secondary").addClass("bg-danger");
             break;
     }
-    $("#"+studio+"_percentage_"+type).css("width", percentage+"%").attr("aria-valuenow", percentage).text(percentage+"% "+people+"/"+maxpeople);
+    $("#"+studio+"_percentage_"+type).css("width", percentage+"%").attr("aria-valuenow", percentage).text(people+"/"+maxpeople+" - "+percentage+"%");
 }
 
 function dataPARSE(studio,json){

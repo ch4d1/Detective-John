@@ -1,4 +1,6 @@
 <?php
+//mcfit api: https://www.mcfit.com/de/auslastung/antwort/request.json?tx_brastudioprofilesmcfitcom_brastudioprofiles[studioId]=
+//johnreed api: https://typo3.johnreed.fitness/studiocapacity.json?studioId=
 header('Content-Type: application/json');
 if(!empty($_GET)){
 
@@ -10,10 +12,10 @@ if(!empty($_GET)){
             case "f":
                 switch($value){
                     case "john":
-                        $url = "https://typo3.johnreed.fitness/studiocapacity.json?studioId=1613587690";
+                        $url = "https://www.mcfit.com/de/auslastung/antwort/request.json?tx_brastudioprofilesmcfitcom_brastudioprofiles[studioId]=1613587690";
                         break;
                     case "mcfit":
-                        $url = "https://typo3.johnreed.fitness/studiocapacity.json?studioId=1632519320";
+                        $url = "https://www.mcfit.com/de/auslastung/antwort/request.json?tx_brastudioprofilesmcfitcom_brastudioprofiles[studioId]=1632519320";
                         break;
                 }
                 break;
